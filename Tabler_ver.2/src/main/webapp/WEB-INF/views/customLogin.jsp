@@ -35,15 +35,15 @@
                     
                     <div class="form-footer">
 	                    <div class="form-group row">
-	                      <label class="form-label col-3 col-form-label pt-0">remember me</label>
+	                      <label class="form-label col-3 col-form-label pt-0">   </label>
 	                      <div class="col">
 	                        <label class="form-check">
 	                          <input class="form-check-input" type="checkbox" checked="">
-	                          <span class="form-check-label">Option 1</span>
+	                          <span class="form-check-label">Remember Me</span>
 	                        </label>
 	                      </div>
 	                    </div>
-                      	<button type="submit" class="btn btn-primary">Submit</button>
+                      	<button type="submit" class="btn btn-primary float-right">Submit</button>
                     </div>
                   </form>
                 </div>
