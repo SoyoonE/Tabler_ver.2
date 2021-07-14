@@ -4,13 +4,13 @@
 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 	
-	<mapper namespace="org.zerock.mapper.ReplyMapper">
+	<mapper namespace="com.yoon.mapper.ReplyMapper">
 		<insert id="insert">
 			insert into tbl_reply (rno,bno,reply,replyer)
 			values (seq_reply.nextval, #{bno}, #{reply}, #{replyer})
 		</insert>
 		
-		<select id="read" resultType="org.zerock.domain.ReplyVO">
+		<select id="read" resultType="com.yoon.domain.ReplyVO">
 			select * from tbl_reply where rno = #{rno}
 		</select>
 		
@@ -22,7 +22,7 @@
 			update tbl_reply set reply = #{reply}, updateDate = sysdate where rno = #{rno}
 		</update>
 		
-		<select id="getListWithPaging" resultType="org.zerock.domain.ReplyVO">
+		<select id="getListWithPaging" resultType="com.yoon.domain.ReplyVO">
 			<![CDATA[
 				select rno, bno, reply, replyer, replyDate, updateDate
 				from 
